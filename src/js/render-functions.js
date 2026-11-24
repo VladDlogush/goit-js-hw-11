@@ -6,7 +6,15 @@ const lightbox = new SimpleLightbox('.gallery a', {
   captionDelay: 250,
 });
 
-function makeImageCard({ webformatURL, largeImageURL, tags, likes, views, comments, downloads }) {
+function makeImageCard({
+  webformatURL,
+  largeImageURL,
+  tags,
+  likes,
+  views,
+  comments,
+  downloads,
+}) {
   return `
     <li class="gallery-item">
       <a class="gallery-link" href="${largeImageURL}">
